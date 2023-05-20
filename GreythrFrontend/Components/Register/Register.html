@@ -1,0 +1,39 @@
+<div class="RegisterDivOne">
+
+    <div style="display:flex;flex-direction:row;justify-content:space-between;padding:0 7rem;">
+        <img   style="width:14%;" src="../../Images/LogoOfCompany.png" class="d-block" alt="...">
+        <!-- <a href="#!Login" class='Link CreateAccount btn btn-primary'>Login</a> -->
+    </div>
+
+    <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin:2rem;">
+        <div class="UserDetails">
+            <p>Register with User Details</p>
+            <div class=" mb-3 RegisterInputClass">
+                <label class="labelNames">Name</label>
+                <input type="text" class="form-control" ng-model="Name" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+            </div>
+            <div class=" mb-3 RegisterInputClass">
+                <label class="labelNames">Location</label>
+                <input type="text" class="form-control" ng-model="Location" placeholder="Location" aria-label="Location" aria-describedby="basic-addon1">
+            </div>
+            <div class=" mb-3 RegisterInputClass">
+                <label class="labelNames">PrimaryContact</label>
+                <input type="number" class="form-control" ng-model="PrimaryContact" placeholder="PrimaryContact" aria-label="PrimaryContact" aria-describedby="basic-addon1">
+            </div>
+            <div class=" mb-3 RegisterInputClass">
+                <label class="labelNames">Company Email</label>
+                <input type="email" class="form-control" ng-model="CompanyEmail" placeholder="CompanyEmail" aria-label="CompanyEmail" aria-describedby="basic-addon1">
+            </div>
+            <div class=" mb-3 RegisterInputClass">
+                <label class="labelNames">Password</label>
+                <input type="text" class="form-control" ng-model="password" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+
+            <Button class="btn btn-primary" type="submit" ng-click="resister(Name,Location,PrimaryContact,Password)">Register</Button> 
+
+            <div style="display:flex;flex-direction:row;justify-content:center;">
+                <a href="#!Login" class='Link CreateAccount'>Already Registered? Login</a>
+            </div>
+        </div>
+    </div>
+</div>
